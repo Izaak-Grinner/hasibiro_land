@@ -32,7 +32,29 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  margin: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #61dafb;
+  /* リンクの色 */
+}
+
+nav a:hover {
+  color: #21a1f1;
+  /* ホバー時の色 */
+}
+
+li {
+  text-align: left;
+  /* リストアイテムの文字を左揃え */
 }

@@ -1,16 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  font-family: 'Arial', sans-serif;
 }
 
 .App-header {
@@ -22,39 +12,167 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* ヘッダーに影を追加 */
 }
 
 .App-link {
   color: #61dafb;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  /* リンクの色が変わるアニメーション */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+  color: #21a1f1;
 }
 
 nav {
   margin: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* ナビゲーションに半透明の背景 */
+  border-radius: 8px;
 }
 
 nav a {
   margin-right: 20px;
   text-decoration: none;
   color: #61dafb;
-  /* リンクの色 */
+  font-size: 1.2rem;
+  /* リンクのフォントサイズを大きく */
+  transition: transform 0.3s ease;
+  /* ホバー時にアニメーション */
 }
 
 nav a:hover {
   color: #21a1f1;
-  /* ホバー時の色 */
+  transform: scale(1.1);
+  /* ホバー時に拡大 */
 }
 
 li {
   text-align: left;
-  /* リストアイテムの文字を左揃え */
+  line-height: 1.8;
+  /* リストアイテム間隔を広げる */
+}
+
+/* PlayRoom の専用装飾 */
+button {
+  padding: 10px 20px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #1a82c2;
+  transform: scale(0.9);
+}
+
+.gameSelet {
+  appearance: none;
+  /* デフォルト矢印を非表示 */
+  border: 2px solid #0055af;
+  /* 青の枠線 */
+  border-radius: 8px;
+  /* 角を丸くする */
+  padding: 10px 20px;
+  /* 内側の余白 */
+  font-size: 16px;
+  /* フォントサイズ */
+  color: #fff;
+  /* 文字色を白に */
+  background-color: #007BFF;
+  /* 青の背景色 */
+  cursor: pointer;
+  /* ホバー時のポインター */
+  transition: all 0.3s ease;
+  /* アニメーション効果 */
+}
+
+/* ホバー時のスタイリング */
+.gameSelet:hover {
+  background-color: #0056b3;
+  /* 濃い青に変更 */
+  border-color: #0056b3;
+  /* 同じ濃い青の枠線 */
+}
+
+/* フォーカス時のスタイリング */
+.gameSelet:focus {
+  outline: none;
+  /* デフォルトのフォーカス枠を削除 */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  /* 青い光の影 */
+}
+
+/* ドロップダウンのオプション */
+.gameSelet option {
+  background-color: #ffffff;
+  /* オプションの背景色を白に */
+  color: black;
+
+}
+
+/*omikuji*/
+.omikuji {
+  background-color: #f0f8ff;
+  /* 背景色を薄い青に設定 */
+  padding: 20px;
+  /* 内側の余白 */
+  border-radius: 10px;
+  /* 角を丸くする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* 影を追加 */
+  margin-top: 20px;
+  /* 上部に余白を追加 */
+  text-align: center;
+  /* コンテンツを中央揃え */
+
+  margin-left: auto;
+  margin-right: auto;
+  /* 中央寄せ */
+}
+
+.omikuji button {
+  margin-top: 10px;
+  /* ボタンの上に余白を追加 */
+  background-color: #61dafb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.omikuji button:hover {
+  background-color: #21a1f1;
+  /* ホバー時の色 */
+  transform: scale(1.1);
+  /* ボタンの拡大 */
+}
+
+.omikuji p#result {
+  margin-top: 15px;
+  /* 結果表示に余白を追加 */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  /* 結果を強調するオレンジ色 */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  /* 結果に影を追加 */
 }

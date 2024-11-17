@@ -14,7 +14,7 @@ function App() {
         <nav>
           <Link to="/">Home</Link> |
           <Link to="/about">About</Link> |
-          <Link to="/recommend">広告欄</Link>
+          <Link to="/recommend">広告欄</Link> |
           <Link to="/playroom">play</Link>
         </nav>
 

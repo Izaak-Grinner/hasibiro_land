@@ -168,11 +168,39 @@ button:active {
 
 .omikuji p#result {
   margin-top: 15px;
-  /* 結果表示に余白を追加 */
   font-size: 1.2rem;
   font-weight: bold;
   color: black;
-  /* 結果を強調するオレンジ色 */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  /* 結果に影を追加 */
+
+}
+
+.memo {
+  width: 700px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.memo h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #444;
+  text-align: center;
+}
+
+.memo textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
 }

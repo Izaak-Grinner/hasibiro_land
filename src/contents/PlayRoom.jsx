@@ -1,5 +1,7 @@
 import Omikuji from './game/Omikuji';
 import Camera from './game/Camera';
+import Memo from './game/Memo';
+
 import { useState, useEffect } from 'react';
 
 
@@ -9,7 +11,8 @@ const PlayRoom = () => {
     const gameComponents = {
         nothing: () => <div></div>,
         omikuji: Omikuji,
-        camara: Camera
+        camara: Camera,
+        memo: Memo
     };
 
     const handleChange = (event) => {
@@ -26,6 +29,7 @@ const PlayRoom = () => {
                 <option value="nothing">ゲーム選択</option>
                 <option value="omikuji">おみくじ</option>
                 <option value="camara">カメラ</option>
+                <option value="memo">メモ</option>
             </select>
             <div style={{ marginTop: "20px" }}></div>
             <CurrentGameComponent />

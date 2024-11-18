@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/hasibiro_land/static/css/main.3f3d6643.css",
-    "main.js": "/hasibiro_land/static/js/main.4bfcfe1b.js",
+    "main.css": "/hasibiro_land/static/css/main.8392a689.css",
+    "main.js": "/hasibiro_land/static/js/main.a0a0d46a.js",
     "static/js/453.8f1ddc04.chunk.js": "/hasibiro_land/static/js/453.8f1ddc04.chunk.js",
     "index.html": "/hasibiro_land/index.html",
-    "main.3f3d6643.css.map": "/hasibiro_land/static/css/main.3f3d6643.css.map",
-    "main.4bfcfe1b.js.map": "/hasibiro_land/static/js/main.4bfcfe1b.js.map",
+    "main.8392a689.css.map": "/hasibiro_land/static/css/main.8392a689.css.map",
+    "main.a0a0d46a.js.map": "/hasibiro_land/static/js/main.a0a0d46a.js.map",
     "453.8f1ddc04.chunk.js.map": "/hasibiro_land/static/js/453.8f1ddc04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f3d6643.css",
-    "static/js/main.4bfcfe1b.js"
+    "static/css/main.8392a689.css",
+    "static/js/main.a0a0d46a.js"
   ]
 }

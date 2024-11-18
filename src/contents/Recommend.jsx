@@ -20,7 +20,7 @@ function Recommend() {
                 </li>
                 <li>曲
                     <ul>
-                        <li>心臓 : TOBOE</li>
+                        <li>心臓 : TOOBOE</li>
                         <li>エビ揉め</li>
                     </ul>
                 </li>

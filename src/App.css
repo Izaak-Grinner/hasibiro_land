@@ -36,6 +36,8 @@ nav {
   border-radius: 8px;
 }
 
+nav p {}
+
 nav a {
   margin-right: 20px;
   text-decoration: none;
@@ -203,4 +205,121 @@ button:active {
   box-sizing: border-box;
   background-color: #fff;
   color: #333;
+}
+
+/*              */
+/* 全体のスタイル */
+.bulletin-board {
+  font-family: Arial, sans-serif;
+  max-width: 80%;
+  /* 横幅をページ全体の80%に変更 */
+  width: 800px;
+  /* 最大で800pxまで広げる */
+  margin: 0 auto;
+  /* 中央寄せ */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* フォームのスタイル */
+.form {
+  display: flex;
+  gap: 10px;
+  /* 各要素間の隙間 */
+  align-items: flex-start;
+  /* 上揃えにする */
+}
+
+.form-left {
+  flex-grow: 1;
+  /* 左側（ペンネームと投稿内容）を広げる */
+  display: flex;
+  flex-direction: column;
+  /* 縦並びに配置 */
+  gap: 10px;
+}
+
+.pen-name {
+  width: 50%;
+  /* ペンネーム入力欄を全幅に */
+}
+
+.content {
+  width: 90%;
+  /* 投稿内容欄を全幅に */
+  height: 120px;
+  /* 高さを指定 */
+}
+
+.submit-button {
+  width: 100px;
+  /* ボタンの横幅を指定 */
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  /* 上に余白を追加してバランスを調整 */
+  align-self: end;
+  /* ボタンを中央揃えに配置 */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* 投稿一覧のスタイル */
+.post-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* 投稿一覧は縦並び */
+  align-items: flex-start;
+  /* 左揃えにする */
+}
+
+.post {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 100%;
+  /* 横幅を広げて左揃えにする */
+}
+
+/* ペンネームと投稿日時を横並びに配置 */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  /* 左右に分ける */
+  align-items: center;
+  /* 中央揃え */
+  margin-bottom: 10px;
+  /* ペンネームと投稿内容の間に隙間を作る */
+}
+
+.post-header p {
+  margin: 0;
+  /* 余計なマージンを取り除く */
+}
+
+/* 投稿日時のスタイル */
+.post-date {
+  font-size: 0.9em;
+  /* 投稿日時を少し小さく */
+  color: #777;
+  /* 投稿日時を薄い色に */
+}
+
+.post-content {
+  margin-top: 10px;
+  /* 投稿内容の上に余白 */
 }

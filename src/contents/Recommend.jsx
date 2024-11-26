@@ -1,5 +1,7 @@
 // src/contents/Recommend.jsx
 import React from 'react';
+import MusicPlayerButton from './privateConponents/MusicPlayerButton';
+import songNewsPaper from '../music/newspaper.mp3'
 
 function Recommend() {
     return (
@@ -20,8 +22,11 @@ function Recommend() {
                 </li>
                 <li>曲
                     <ul>
-                        <li>心臓 : TOOBOE</li>
+                        <li>心臓 : TOOBOE<a href='https://www.youtube.com/watch?v=pjkOB8rXs6E'>youtubeリンク</a></li>
                         <li>エビ揉め</li>
+                        <li>news paper　 <a href='https://www.music-note.jp'>提供:Music-Note.jp</a><div></div>
+                            <MusicPlayerButton songSrc={songNewsPaper} />
+                        </li>
                     </ul>
                 </li>
                 {/* 追加のおすすめをリストに並べる */}

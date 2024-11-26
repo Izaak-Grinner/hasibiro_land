@@ -36,7 +36,6 @@ nav {
   border-radius: 8px;
 }
 
-nav p {}
 
 nav a {
   margin-right: 20px;
@@ -59,6 +58,9 @@ li {
   line-height: 1.8;
   /* リストアイテム間隔を広げる */
 }
+
+
+
 
 /* PlayRoom の専用装飾 */
 button {
